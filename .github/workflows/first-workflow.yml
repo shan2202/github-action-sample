@@ -31,6 +31,9 @@ jobs:
         mkdir -p ~/new/artifact/qa
         echo hello > ~/new/artifact/world.txt
         echo bye > ~/new/artifact/qa/world1.txt
+        cp README.md ~/new/artifact/qa/
+        pwd
+        ls -la
 
     - name: Upload artifact from Home folder
       uses: actions/upload-artifact@v2
