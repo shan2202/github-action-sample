@@ -28,12 +28,13 @@ jobs:
     
     - name: Create folder in home folder
       run: |
-        mkdir -p ~/new/artifact
+        mkdir -p ~/new/artifact/qa
         echo hello > ~/new/artifact/world.txt
+        echo bye > ~/new/artifact/qa/world1.txt
 
     - name: Upload artifact from Home folder
       uses: actions/upload-artifact@v2
       with:	
         name: 'Artifacts-V2'	
-        path: '~/new/artifact'
+        path: ~/new/artifact/
 
