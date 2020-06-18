@@ -38,6 +38,6 @@ jobs:
     - name: Upload artifact from Home folder
       uses: actions/upload-artifact@v2
       with:	
-        name: 'Artifacts-V2'	
+        name: Artifacts
         path: ~/new/artifact/
 
