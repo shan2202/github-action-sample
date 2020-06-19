@@ -36,7 +36,7 @@ jobs:
         ls -la
 
     - name: Upload artifact from Home folder
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v1
       with:	
         name: Artifacts
         path: ~/new/artifact/
